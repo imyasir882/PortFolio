@@ -1,0 +1,136 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 300;
+    color: #555;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.75rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
+
+/* Hero Section */
+#hero {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+}
+
+#hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* About Section */
+.about-section img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+/* Skills Section */
+.skills-section .skill-item {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.skills-section .skill-item:hover {
+    transform: translateY(-10px);
+}
+
+.skills-section .skill-item i {
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+/* Projects Section */
+.projects-section .project-card {
+    transition: transform 0.3s ease;
+}
+
+.projects-section .project-card:hover {
+    transform: scale(1.05);
+}
+
+.projects-section .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #222;
+}
+
+.contact-section .form-control,
+.contact-section .btn {
+    border-radius: 0;
+}
+
+.contact-section .btn-primary {
+    background: #007bff;
+    border: none;
+}
+
+.contact-section .btn-primary:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    background: #111;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
