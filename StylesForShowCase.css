@@ -1,0 +1,24 @@
+/* Project Showcase */
+.project-showcase {
+    padding-top: 100px; /* To account for the fixed navbar */
+}
+
+.project-showcase img {
+    transition: transform 0.3s ease;
+}
+
+.project-showcase img:hover {
+    transform: scale(1.05);
+}
+
+.project-details h3 {
+    margin-top: 30px;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.project-details p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
